@@ -5,16 +5,12 @@ namespace   DrinkUI
     {
         public void Display()
         {
-            Console.WriteLine(" Welcome to Drinks Store\n");
+            Console.WriteLine(" Welcome to Drinks Store. Please choose an option below!\n");
+           Console.WriteLine("[3]Available beverages");
             Console.WriteLine("[2]Search for customer");
-             Console.WriteLine("[1]Add customer");
-            Console.WriteLine("[0]Exit]");
-           // string? v = Console.ReadLine();
-            //Console.WriteLine("your name is: "+ v);
-            //Console.WriteLine(" Please enter your phone number");
-            //int phone = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine("Your phone: "+ phone);
-            //Console.WriteLine(" Please enter you address");
+             Console.WriteLine("[1]Add new customer");
+            Console.WriteLine("[0]Exit");
+
         }
 
         public string UserChoice()
@@ -30,6 +26,8 @@ namespace   DrinkUI
                     return "AddCustomer";
                 case "2":
                     return "SearchCustomer";
+                case "3":
+                    return "DrinkList";
                 default:
                     Console.WriteLine("Please input a valid response");
                     Console.WriteLine("Please press Enter to continue");

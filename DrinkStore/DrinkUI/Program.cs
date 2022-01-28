@@ -18,16 +18,22 @@ menu.Display();
  switch(answer)
 {
 
-    case "AddCustomer":
-    menu = new AddCustomerMenu();
-    break;
-
-    case "SearchCustomer":
-    menu = new SearchCustomer();
-    break;
-  case "MainMenu":
+    
+case  "MainMenu":
   menu = new MainMenu();
   break;
+   
+  case "DrinkList":
+  menu = new DrinkList();
+  break;
+  
+   case "SearchCustomer":
+    menu = new SearchCustomer();
+    break;
+  case "AddCustomer":
+    menu = new AddCustomerMenu();
+    break;
+    
   case "Exit":
   repeating = false;
   break;

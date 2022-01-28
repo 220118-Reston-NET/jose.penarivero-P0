@@ -6,8 +6,8 @@ public class Customer
 
 //customer properties
 public string Name { get; set; }
-public string Address  { get; private set; }
-public long Phone { get; private set; }
+public string Address  { get; set; }
+public double Phone { get; set; }
 
 private List<Inventory> _inventory;
 public List<Inventory> Inventory
