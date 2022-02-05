@@ -3,10 +3,10 @@
 // using DrinkBL;
 using DrinkModel;
 using DrinkUI;
-using SerializationFunc;
-Serialization.SerialMain();
+// using SerializationFunc;
+// Serialization.SerialMain();
 
-// Customer ab = new Customer();
+// //Customer ab = new Customer();
 // ab._quantity = 2;
 bool repeating =true;
 IUserMenu menu = new MainMenu();
@@ -64,11 +64,11 @@ menu.Display();
 
 
 }
-Serialization.SerialMain();
+
 }
 
 
-Serialization.SerialMain();
+
 
 
 

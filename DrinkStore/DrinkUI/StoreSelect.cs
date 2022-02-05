@@ -26,14 +26,12 @@ namespace DrinkUI
             
             switch(UserInput)
             {
-     case "0":
-          return "MainMenu";
-
+    
     case "1":
           return "Go back";
      
      case "2":
-      _Storeloc1.StoreName = Console.ReadLine();
+      //_Storeloc1.StoreName = Console.ReadLine();
            return "AddStore1";
          
      case "3":
@@ -47,7 +45,7 @@ namespace DrinkUI
               Console.WriteLine("Please input a valid response");
                     Console.WriteLine("Please press Enter to continue");
                     Console.ReadLine();
-                    return "MainMenu";
+                    return "MainMen";//
         }
         }
     }

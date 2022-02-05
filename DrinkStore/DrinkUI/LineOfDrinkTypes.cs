@@ -57,5 +57,5 @@ namespace DrinkUI
     }
 }
 
-//       private static LineItems _drinktype = new LineItems();
+//       //private static LineItems _drinktype = new LineItems();
 //         public void Display()

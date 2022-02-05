@@ -1,10 +1,14 @@
 using DrinkModel;
-namespace DrinkUI
-{
 
+namespace DrinkUI
+//
+{
     public class SearchCustomer : IUserMenu
     {
-        private Customer _searchName = new Customer();
+         private static Customer _searchName = new Customer();
+        
+         
+
         public void Display()
         {
              Console.WriteLine("Search customer info");
@@ -19,29 +23,27 @@ namespace DrinkUI
         public string UserChoice()
         {
 
-            string? UserInput = Console.ReadLine();
+            string UserInput = Console.ReadLine();
             
             switch(UserInput)
             {
      case "0":
           return "MainMenu";
      case "1":
-           return "MainMenu";
+           return "Save";
      case "2":
       
-           return "AddCustomer";
+           return "Searchcustomer";
      case "3":
-
-     
-           return "AddCustomer";
-           case "4":
-           return "AddCustomer";
+         return "Searchcustomer";
+           case "5":
+           return "Searchcustomer";
      default:
               Console.WriteLine("Please input a valid response");
                     Console.WriteLine("Please press Enter to continue");
                     Console.ReadLine();
                     return "MainMenu";
         }
-        }
     }
+}
 }

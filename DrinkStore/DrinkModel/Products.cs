@@ -12,7 +12,7 @@ namespace DrinkModel
           // public string Drinktype5{ get; set; }
           // public string Drinktype6{ get; set; }
           
-          
+             
 
         public Products()
         {    

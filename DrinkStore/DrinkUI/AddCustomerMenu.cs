@@ -6,20 +6,9 @@ using System.Text.Json.Serialization;
 namespace DrinkUI
 {
     public class AddCustomerMenu : IUserMenu
-    {
-
-           Customer cust = new Customer()
-      {
-
-            CustomerId = "",
-            Name = " jose",
-            Address = "Plantation",
-            Phone ="5678",
-            Email = "Burguer@hotmail.com",
-            ListOfOrders= "None"
-      };
+   {
        //static variable -non access modifier need to to classes
-        private static string _filepath = "./Database/Customer.json;";
+        
          private static Customer _newCustomer = new Customer();
        //Dependency Injection
      //    //==========================
@@ -40,9 +29,7 @@ namespace DrinkUI
             Console.WriteLine("[0]Go back");
             Console.WriteLine("Choose an option from above to be added or press 0 to go back.");
         }
-
         public string UserChoice()
-
         
         {
              string UserInput = Console.ReadLine();
@@ -51,16 +38,7 @@ namespace DrinkUI
             {
      case "0":
           return "Go back";
-     case "1":
-            
-     string jsonString = JsonSerializer.Serialize(cust, new JsonSerializerOptions{WriteIndented  = true});
-      Console.WriteLine(jsonString);
-       File.WriteAllText(_filepath, jsonString);
-            
-            
-            
-            
-                                                    //_customerBL.AddCustomer(_newCustomer);
+     case "1":                                                    //_customerBL.AddCustomer(_newCustomer);
            return "MainMenu";
       case "2":
      Console.WriteLine("Enter your email account");
