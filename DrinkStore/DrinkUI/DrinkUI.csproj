@@ -2,10 +2,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DrinkModel\DrinkModel.csproj" />
+    <ProjectReference Include="..\DrinkBL\DrinkBL.csproj" />
+    <ProjectReference Include="..\DrinkDL\DrinkDL.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="serilog" Version="2.10.0" />
+    <PackageReference Include="Serilog" Version="2.10.0" />
     <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
   </ItemGroup>
 
