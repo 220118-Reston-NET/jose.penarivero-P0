@@ -1,14 +1,15 @@
-//using DrinkBL;
 using DrinkModel;
+
 namespace DrinkUI
 {
 
+
+
+
     public class StoreSelect : IUserMenu
     {
-        
-
-        private static StoreFront _Storeloc1 = new StoreFront();
-        private static StoreFront2 _Storeloc2 = new StoreFront2();
+      private static StoreFront _Storeloc1 = new StoreFront();
+       // private static StoreFront2 _Storeloc2 = new StoreFront2();
                 public void Display()
         {
             Console.WriteLine("Store Information.\n");

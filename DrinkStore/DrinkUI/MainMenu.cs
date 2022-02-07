@@ -1,14 +1,14 @@
-using DrinkModel;
+namespace DrinkUI
 
-namespace   DrinkUI
 {
 
-    public class MainMenu : IUserMenu
-    {
 
-        
-        
-        public void Display()
+
+public class MainMenu : IUserMenu
+{
+
+
+public void Display()
         {
             Console.WriteLine(" Welcome to Drinks Depot Store. Please enter your information to customize your order");
             Console.WriteLine(" ===========================================================================================================\n");
@@ -53,7 +53,7 @@ namespace   DrinkUI
                     return "Ordering";
                     
                     case "7":
-                    return "Drinktp";
+                    return "Searchcustomer";
                 default:
                     Console.WriteLine("Please input a valid response");
                     Console.WriteLine("Please press Enter to continue");
@@ -65,4 +65,3 @@ namespace   DrinkUI
 
 
 }
-//

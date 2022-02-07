@@ -1,13 +1,14 @@
 using DrinkModel;
 
 namespace DrinkUI
+
 {
+
     public class CustomerLogin : IUserMenu
     {
-        
+
          private  static  CustSigning  _newlogin = new  CustSigning();
-      
-        public void Display()
+         public void Display()
         {
              Console.WriteLine(" Customer Login in!");
             Console.WriteLine("\n[3] Enter userID: "+ _newlogin.UserId);
@@ -42,4 +43,3 @@ namespace DrinkUI
     }
 }
 }
-//

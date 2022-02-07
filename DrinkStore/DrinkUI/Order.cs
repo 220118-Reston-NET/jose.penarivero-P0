@@ -1,9 +1,12 @@
 namespace DrinkUI
 {
 
+
     public class Order : IUserMenu
+
+
     {
-        public void Display()
+       public void Display()
         {
             Console.WriteLine(" Please choose item to make your order\n");
 
@@ -39,4 +42,4 @@ namespace DrinkUI
             }
     }
 }
-}//
+}

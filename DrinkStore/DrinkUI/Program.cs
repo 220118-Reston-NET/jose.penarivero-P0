@@ -1,15 +1,19 @@
-﻿
-// See https://aka.ms/new-console-template for more information
-// using DrinkBL;
-using DrinkModel;
+﻿// See https://aka.ms/new-console-template for more information
+
+using DrinkDL;
+using DrinkkBL;
 using DrinkUI;
+
+Console.WriteLine("Hello, World!");
+// using DrinkModel;
+// using DrinkUI;
 // using SerializationFunc;
 // Serialization.SerialMain();
 
 // //Customer ab = new Customer();
 // ab._quantity = 2;
 bool repeating =true;
-IUserMenu menu = new MainMenu();
+   IUserMenu menu = new MainMenu();
 while(repeating)
 {
 Console.Clear();
@@ -27,8 +31,10 @@ menu.Display();
               menu =  new LineOfDrinkTypes();
               break;
 
-            case  "AddCustomer":
-              menu = new AddCustomerMenu();
+            
+
+              case  "AddCustomer":
+              menu = new AddCustomerMenu(new DrinkBL(new Repository()));
               break;
 
               case  "Ordering":
@@ -38,9 +44,11 @@ menu.Display();
              menu = new StoreSelect();
              break;
 
-             case  " Drinktp":
-             menu = new LineOfDrinkTypes();
-             break;
+             case  "Searchcustomer":
+            menu = new SearchCustomer();
+            break;
+
+            
 
 
              case  "Go back":
@@ -48,7 +56,7 @@ menu.Display();
               break;
 
              case  "Drinkpro":
-              menu =  new Prodts();
+              menu =  new prodts();
               break;
 
               case "Back to menu":
@@ -66,54 +74,3 @@ menu.Display();
 }
 
 }
-
-
-
-
-
-
-// using DrinkUI;
-
-// Console.WriteLine("Hello, World!");
-// // Customer ab = new Customer();
-// // ab._quantity = 2;
-// bool repeating =true;
-// IUserMenu menu = new MainMenu();
-
-// while(repeating)
-// {
-// Console.Clear();
-
-// menu.Display();
- 
-//  string answer = menu.UserChoice();
-
-//  switch(answer)
-// {
-
-    
-// case  "MainMenu":
-//   menu = new MainMenu();
-//   break;
-   
-//   case "DrinkList":
-//   menu = new DrinkList();
-//   break;
-  
-//    case "SearchCustomer":
-//     menu = new SearchCustomer();
-//     break;
-//   case "AddCustomer":
-//     menu = new AddCustomerMenu();
-//     break;
-    
-//   case "Exit":
-//   repeating = false;
-//   break;
-//   default:
-//   Console.WriteLine(" Page does not exist");
-//   break;
-
-
-// }
-// }0

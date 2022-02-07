@@ -3,9 +3,10 @@ namespace DrinkUI
 
 {
 
-public interface IUserMenu
+
+        public interface IUserMenu
 {
-   /// <summary>
+/// <summary>
         /// Will display the menu and user choices in the terminal
         /// </summary>
         void Display();
@@ -17,7 +18,4 @@ public interface IUserMenu
         string UserChoice();
 
 }
-
-
 }
-//

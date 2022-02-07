@@ -1,14 +1,10 @@
-using DrinkModel;
-//
 namespace DrinkUI
-
 {
 
-
-    public class Prodts : IUserMenu
+    public class prodts : IUserMenu
     {
-//static variable -non access modifier need to to classes
-         private static Products p_product = new Products();
+        //static variable -non access modifier need to to classes
+        // private static Products p_product = new Products();
        //Dependency Injection
      //    //==========================
      //    private ICustomerBL _customerBL;
@@ -42,7 +38,7 @@ namespace DrinkUI
      case "2":     
           return "AddCustomer";
     case "3":   
-          return "AddCustomer";
+          return "Drinkpro";
      case "4":    
           return "Drinkpro";
      case "5":      

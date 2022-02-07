@@ -1,22 +1,24 @@
-//using DrinkBL;
+
+using DrinkkBL;
+
 using DrinkModel;
-using System.Text.Json;
-using System.Text.Json.Serialization;
+
 
 namespace DrinkUI
 {
-    public class AddCustomerMenu : IUserMenu
-   {
+
+public class AddCustomerMenu : IUserMenu
+{
        //static variable -non access modifier need to to classes
         
          private static Customer _newCustomer = new Customer();
        //Dependency Injection
-     //    //==========================
-     //    private ICustomerBL _customerBL;
-     //    public AddCustomerMenu(ICustomerBL c_customerBL)
-     //    {
-     //        _customerBL = c_customerBL;
-     //    }
+     //==========================
+       private IDrinkBL _customerBL;
+       public AddCustomerMenu(IDrinkBL c_customerBL)
+        {
+           _customerBL = c_customerBL;
+        }
         //==========================
         public void Display()
         {
@@ -38,7 +40,8 @@ namespace DrinkUI
             {
      case "0":
           return "Go back";
-     case "1":                                                    //_customerBL.AddCustomer(_newCustomer);
+     case "1":     
+     _customerBL.AddCustomer(_newCustomer);                                             //_customerBL.AddCustomer(_newCustomer);
            return "MainMenu";
       case "2":
      Console.WriteLine("Enter your email account");
@@ -58,7 +61,7 @@ namespace DrinkUI
      Console.WriteLine("Enter your name");
      _newCustomer.Name = Console.ReadLine();// Getting user input to set a value 
      
-          return "AddCustomer";
+          return "AddCustomer2";
      default:
               Console.WriteLine("Please input a valid response");
                     Console.WriteLine("Please press Enter to continue");

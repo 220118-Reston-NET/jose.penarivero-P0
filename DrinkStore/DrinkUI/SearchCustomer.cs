@@ -1,11 +1,13 @@
 using DrinkModel;
 
 namespace DrinkUI
-//
+
 {
+
+
     public class SearchCustomer : IUserMenu
     {
-         private static Customer _searchName = new Customer();
+        private static Customer _searchName = new Customer();
         
          
 
@@ -36,7 +38,7 @@ namespace DrinkUI
            return "Searchcustomer";
      case "3":
          return "Searchcustomer";
-           case "5":
+           case "7":
            return "Searchcustomer";
      default:
               Console.WriteLine("Please input a valid response");
